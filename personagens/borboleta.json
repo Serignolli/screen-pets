@@ -1,0 +1,57 @@
+{
+  "id": "borboleta",
+  "nome": "Borboletas",
+  "tipo": "voador",
+  "voo": 3,
+  "descricao": "Batem as asas devagarinho pelo alto da tela, soltando brilhinhos.",
+  "efeito": "estrelas",
+  "ritmo": 0.9,
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "......K..K......",
+        ".......KK.......",
+        ".WWWW..BB..WWWW.",
+        "WWDWWW.BB.WWWDWW",
+        "WDDDWWWBBWWWDDDW",
+        "WWDWWWWBBWWWWDWW",
+        ".WWWWW.BB.WWWWW.",
+        "..WPPW.BB.WPPW..",
+        "..PPP..BB..PPP..",
+        "...P...BB...P...",
+        "................",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "......K..K......",
+        ".......KK.......",
+        ".....WWBBWW.....",
+        "....WDWBBWDW....",
+        "....WDWBBWDW....",
+        "....WWWBBWWW....",
+        ".....WWBBWW.....",
+        ".....PPBBPP.....",
+        "......PBBP......",
+        ".......BB.......",
+        "................",
+        "................",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "monarca", "nome": "Monarca", "cores": { "W": "#ffb74d", "D": "#3e2723", "B": "#3e2723", "K": "#3e2723", "P": "#ef6c00" } },
+    { "id": "azul", "nome": "Azul", "cores": { "W": "#4fc3f7", "D": "#01579b", "P": "#0288d1" } },
+    { "id": "rosa", "nome": "Rosa", "cores": { "W": "#f48fb1", "D": "#ad1457", "P": "#ec407a" } },
+    { "id": "amarela", "nome": "Amarela", "cores": { "W": "#fff176", "D": "#f57f17", "P": "#fbc02d" } },
+    { "id": "lilas", "nome": "Lilás", "cores": { "W": "#ce93d8", "D": "#6a1b9a", "P": "#ab47bc" } }
+  ],
+  "falas": ["Que flor bonita!", "Voando leve...", "Já fui lagarta, sabia?", "Ventinho bom!"]
+}

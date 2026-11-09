@@ -1,0 +1,113 @@
+{
+  "id": "joaninha",
+  "nome": "Joaninha",
+  "tipo": "escalador",
+  "descricao": "Passeia pela lateral da tela trazendo sorte. De vez em quando abre as asinhas.",
+  "ritmo": 0.8,
+  "efeito": "coracoes",
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "....L...L...L...",
+        ".....RRRRRR.K...",
+        "....RKRRRRKRKK..",
+        "...RRRRKRRRRKKW.",
+        "...KKKKKKKKKKKK.",
+        "...RRRRKRRRRKKW.",
+        "....RKRRRRKRKK..",
+        ".....RRRRRR.K...",
+        ".....L...L...L..",
+        "................",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        ".....L...L...L..",
+        ".....RRRRRR.K...",
+        "....RKRRRRKRKK..",
+        "...RRRRKRRRRKKW.",
+        "...KKKKKKKKKKKK.",
+        "...RRRRKRRRRKKW.",
+        "....RKRRRRKRKK..",
+        ".....RRRRRR.K...",
+        "....L...L...L...",
+        "................",
+        "................",
+        "................"
+      ]
+    ],
+    "parado": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "....L...L...L...",
+        ".....RRRRRR.K...",
+        "....RKRRRRKRKK..",
+        "...RRRRKRRRRKKW.",
+        "...KKKKKKKKKKKK.",
+        "...RRRRKRRRRKKW.",
+        "....RKRRRRKRKK..",
+        ".....RRRRRR.K...",
+        "....L...L...L...",
+        "................",
+        "................",
+        "................"
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "....L...L...L...",
+        ".....RRRRRR.K...",
+        "....RKRRRRKRKK..",
+        "...RRRRKRRRRKKW.",
+        "...KKKKKKKKKKKK.",
+        "...RRRRKRRRRKKW.",
+        "....RKRRRRKRKK..",
+        ".....RRRRRR.K...",
+        "....L...L...L...",
+        "................",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "..AAAA..........",
+        ".AAAAAA.........",
+        "AAARRRRRRA..K...",
+        "...RRKRRRR.KK...",
+        "..RRRRRKRR.KKW..",
+        "..RRKRRRRRKKKK..",
+        "...KKKKKKKKKKK..",
+        "..RRKRRRRRKKKK..",
+        "..RRRRRKRR.KKW..",
+        "...RRKRRRR.KK...",
+        "AAARRRRRRA..K...",
+        ".AAAAAA.........",
+        "..AAAA..........",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "vermelha", "nome": "Vermelha", "cores": { "R": "#e53935", "K": "#212121", "W": "#ffffff", "L": "#212121", "A": "#cfd8dc" } },
+    { "id": "amarela", "nome": "Amarela", "cores": { "R": "#fdd835" } },
+    { "id": "laranja", "nome": "Laranja", "cores": { "R": "#fb8c00" } },
+    { "id": "azul", "nome": "Azul", "cores": { "R": "#1e88e5" } }
+  ],
+  "falas": ["Traz sorte!", "Vou voar já já.", "Contei minhas bolinhas: estão todas aqui.", "Que folha gostosa."]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "morcego",
+  "nome": "Morcegos",
+  "tipo": "voador",
+  "voo": 3,
+  "descricao": "Morcegos fofos que batem as asas sem parar pelo alto da tela.",
+  "ritmo": 1.3,
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "WW....K..K....WW",
+        "WWW...KKKK...WWW",
+        ".WWW.KEKKEK.WWW.",
+        ".WWWWKKKKKKWWWW.",
+        "..WWWWKKKKWWWW..",
+        "...W.W.KK.W.W...",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "......K..K......",
+        "......KKKK......",
+        ".....KEKKEK.....",
+        "...WWKKKKKKWW...",
+        ".WWWWWKKKKWWWWW.",
+        "WWWW.WWKKWW.WWWW",
+        "WW............WW",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "roxo", "nome": "Roxo", "cores": { "W": "#5e35b1", "K": "#4527a0", "E": "#ffeb3b" } },
+    { "id": "cinza", "nome": "Cinza", "cores": { "W": "#616161", "K": "#424242" } },
+    { "id": "noite", "nome": "Noite", "cores": { "W": "#263238", "K": "#37474f", "E": "#ff5252" } },
+    { "id": "rosa", "nome": "Rosa fofinho", "cores": { "W": "#f06292", "K": "#ad1457", "E": "#ffffff" } }
+  ],
+  "falas": ["Boa noite! Quer dizer, bom dia?", "Squeak!", "De cabeça pra baixo é melhor.", "Quem apagou a luz?"]
+}

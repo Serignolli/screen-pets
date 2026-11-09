@@ -1,0 +1,114 @@
+{
+  "id": "besouro",
+  "nome": "Besouro",
+  "tipo": "escalador",
+  "descricao": "Um besourinho de casco brilhante que sobe a parede e, de vez em quando, abre as asas.",
+  "efeito": "estrelas",
+  "ritmo": 0.7,
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        ".....L...L..L...",
+        "......L..L.L....",
+        "....SSSSSSS.....",
+        "...SHHSSSSSKK.A.",
+        "..SHHSSSSSSKKE..",
+        "..DDDDDDDDDKKKA.",
+        "..SSSSSSSSSKKE..",
+        "...SSSSSSSSKK.A.",
+        "....SSSSSSS.....",
+        ".....L..L..L....",
+        "....L...L...L...",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "....L...L...L...",
+        ".....L..L..L....",
+        "....SSSSSSS.....",
+        "...SHHSSSSSKK.A.",
+        "..SHHSSSSSSKKE..",
+        "..DDDDDDDDDKKKA.",
+        "..SSSSSSSSSKKE..",
+        "...SSSSSSSSKK.A.",
+        "....SSSSSSS.....",
+        "......L..L.L....",
+        ".....L...L..L...",
+        "................"
+      ]
+    ],
+    "parado": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        ".....L...L..L...",
+        "......L..L.L....",
+        "....SSSSSSS.....",
+        "...SHHSSSSSKK.A.",
+        "..SHHSSSSSSKKE..",
+        "..DDDDDDDDDKKKA.",
+        "..SSSSSSSSSKKE..",
+        "...SSSSSSSSKK.A.",
+        "....SSSSSSS.....",
+        "......L..L.L....",
+        ".....L...L..L...",
+        "................"
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "..WWW...........",
+        ".WWWWW..........",
+        ".WWWWSSSSS..L...",
+        "..WWSHHSSSSL....",
+        "...SHHSSSSSS....",
+        "...SSSSSSSSKK.A.",
+        "...WWWW....KKE..",
+        "..WWWWWWW..KKKA.",
+        "...WWWW....KKE..",
+        "...SSSSSSSSKK.A.",
+        "...SSSSSSSSS....",
+        "..WWSSSSSSSL....",
+        ".WWWWSSSSS..L...",
+        ".WWWWW.........."
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        ".....L...L..L...",
+        "......L..L.L....",
+        "....SSSSSSS.....",
+        "...SHHSSSSSKK.A.",
+        "..SHHSSSSSSKKE..",
+        "..DDDDDDDDDKKKA.",
+        "..SSSSSSSSSKKE..",
+        "...SSSSSSSSKK.A.",
+        "....SSSSSSS.....",
+        "......L..L.L....",
+        ".....L...L..L...",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "verde", "nome": "Verde brilhante", "cores": { "S": "#2e9e5b", "H": "#9be7b5", "D": "#14532d", "K": "#1f2a24", "L": "#1f2a24", "E": "#e8f5e9", "A": "#3b4a42", "W": "#dbeafe" } },
+    { "id": "azul", "nome": "Azul", "cores": { "S": "#2f6fd6", "H": "#a9c8ff", "D": "#173a7a" } },
+    { "id": "dourado", "nome": "Dourado", "cores": { "S": "#e0a920", "H": "#ffe9a3", "D": "#8a5a00" } },
+    { "id": "roxo", "nome": "Roxo", "cores": { "S": "#8e44ad", "H": "#e1bee7", "D": "#4a148c" } },
+    { "id": "rubi", "nome": "Rubi", "cores": { "S": "#c62845", "H": "#ffb3c1", "D": "#6d0f20" } }
+  ],
+  "falas": ["Casco polido!", "Subindo, devagarinho.", "Bzz... ah não, isso é abelha.", "Alguém viu uma folhinha?", "Abrindo as asas!"]
+}

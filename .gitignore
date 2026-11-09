@@ -1,0 +1,18 @@
+# gerados pela compilação (src/build.ps1)
+bin/
+dist/
+
+# configuração pessoal (criada pela tela de configuração)
+config.json
+
+__pycache__/
+*.pyc
+
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.playwright-mcp/
+
+# arte do Supporters Pack (fica fora do git, como no CmdCrew)
+supporters-pack/

@@ -1,0 +1,54 @@
+{
+  "id": "caracol",
+  "nome": "Caracol",
+  "tipo": "escalador",
+  "descricao": "Devagar e sempre: sobe a lateral da tela com a casinha nas costas.",
+  "ritmo": 0.35,
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        ".............K.K",
+        "....SSSS.....B.B",
+        "...SSDDSS....B.B",
+        "..SSDSSDSS...BBB",
+        "..SDSDDSDS...BB.",
+        "..SDSSSSDS..BBB.",
+        "..SSDDDDSS.BBB..",
+        "BBBSSSSSSBBBBB..",
+        ".BBBBBBBBBBBBB..",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............K.K.",
+        "....SSSS....B.B.",
+        "...SSDDSS...B.B.",
+        "..SSDSSDSS..BBB.",
+        "..SDSDDSDS..BBB.",
+        "..SDSSSSDS.BBB..",
+        "..SSDDDDSS.BBB..",
+        "BBBSSSSSSBBBBBB.",
+        "BBBBBBBBBBBBBBB.",
+        "................",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "marrom", "nome": "Marrom", "cores": { "S": "#a1887f", "D": "#5d4037", "B": "#d7ccc8", "K": "#212121" } },
+    { "id": "rosa", "nome": "Rosa", "cores": { "S": "#f48fb1", "D": "#ad1457" } },
+    { "id": "azul", "nome": "Azul", "cores": { "S": "#81d4fa", "D": "#01579b" } },
+    { "id": "dourado", "nome": "Dourado", "cores": { "S": "#ffd54f", "D": "#e65100", "B": "#c5e1a5" } }
+  ],
+  "falas": ["Devagar e sempre.", "Chego lá amanhã.", "Minha casa vai comigo.", "Sem pressa..."]
+}

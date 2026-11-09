@@ -1,0 +1,138 @@
+{
+  "id": "formigas",
+  "nome": "Formigas",
+  "tipo": "terrestre",
+  "descricao": "Formigas trabalhadoras que levam folhas de um lado para o outro, em fila.",
+  "efeito": "poeira",
+  "carga": "acucar",
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............L..L",
+        ".............LL.",
+        "..AAA.......AAA.",
+        ".AAAAA.AAA.AAWAA",
+        ".AADAAAAAAAAAAA.",
+        "..AAA..AAA..AA..",
+        "..L.L.L.L.L.L...",
+        ".L...L...L...L.."
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............L..L",
+        ".............LL.",
+        "..AAA.......AAA.",
+        ".AAAAA.AAA.AAWAA",
+        ".AADAAAAAAAAAAA.",
+        "..AAA..AAA..AA..",
+        "...L.L.L.L.L.L..",
+        "..L..L..L..L..L."
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "................",
+        "..........GGG...",
+        "........GGGGGGG.",
+        ".......GJJJJJJGG",
+        "........GGGGGGG.",
+        "..........GGG...",
+        "............L..L",
+        ".............LL.",
+        "..AAA.......AAA.",
+        ".AAAAA.AAA.AAWAA",
+        ".AADAAAAAAAAAAA.",
+        "..AAA..AAA..AA..",
+        "..L.L.L.L.L.L...",
+        ".L...L...L...L.."
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "..........GGG...",
+        "........GGGGGGG.",
+        ".......GJJJJJJGG",
+        "........GGGGGGG.",
+        "..........GGG..L",
+        ".............LL.",
+        "..AAA.......AAA.",
+        ".AAAAA.AAA.AAWAA",
+        ".AADAAAAAAAAAAA.",
+        "..AAA..AAA..AA..",
+        "...L.L.L.L.L.L..",
+        "...L.L.L.L.L.L.."
+      ]
+    ]
+  },
+  "skins": [
+    {
+      "id": "vermelha",
+      "nome": "Lava-pés (vermelha)",
+      "cores": {
+        "A": "#c62828",
+        "D": "#ef5350",
+        "L": "#5d1a1a",
+        "W": "#ffffff",
+        "G": "#43a047",
+        "J": "#2e7d32"
+      }
+    },
+    {
+      "id": "preta",
+      "nome": "Carpinteira (preta)",
+      "cores": {
+        "A": "#212121",
+        "D": "#616161",
+        "L": "#111111"
+      }
+    },
+    {
+      "id": "cortadeira",
+      "nome": "Saúva (cortadeira)",
+      "cores": {
+        "A": "#8d4b2a",
+        "D": "#b0703f",
+        "L": "#4e2a17",
+        "G": "#7cb342",
+        "J": "#558b2f"
+      }
+    },
+    {
+      "id": "dourada",
+      "nome": "Dourada",
+      "cores": {
+        "A": "#f9a825",
+        "D": "#ffd54f",
+        "L": "#8d6e00",
+        "G": "#ef6c00",
+        "J": "#bf360c"
+      }
+    }
+  ],
+  "falas": [
+    "Mais uma folha!",
+    "Açúcar à vista!",
+    "Trilha liberada!",
+    "Em fila, pessoal!",
+    "Uma, duas, três..."
+  ]
+}

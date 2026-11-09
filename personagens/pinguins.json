@@ -1,0 +1,132 @@
+{
+  "id": "pinguins",
+  "nome": "Pinguins",
+  "tipo": "terrestre",
+  "descricao": "Pinguins que escorregam pela barra de tarefas carregando peixes fresquinhos.",
+  "efeito": "neve",
+  "carga": "peixe",
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "......KKKK......",
+        ".....KKKKKK.....",
+        ".....KKKEKKK....",
+        ".....KKKKKOOO...",
+        ".....KWWWKK.....",
+        "....KWWWWWKK....",
+        "...KKWWWWWWKK...",
+        "...KKWWWWWWKK...",
+        "..K.KWWWWWWK.K..",
+        "....KWWWWWWK....",
+        ".....KWWWWKK....",
+        "......KKKKK.....",
+        ".....OO...OO....",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "......KKKK......",
+        ".....KKKKKK.....",
+        ".....KKKEKKK....",
+        ".....KKKKKOOO...",
+        ".....KWWWKK.....",
+        "....KWWWWWKK....",
+        "...KKWWWWWWKK...",
+        "..KKKWWWWWWKKK..",
+        "....KWWWWWWK....",
+        "....KWWWWWWK....",
+        ".....KWWWWKK....",
+        "......KKKKK.....",
+        "......OO.OO.....",
+        "................"
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "......KKKK......",
+        ".....KKKKKK.....",
+        ".....KKKEKKK....",
+        ".....KKKKKOOO...",
+        ".....KWWWKK.....",
+        "....KWWWWWKK....",
+        "...KKWWWWWWKKKK.",
+        "....KWWWWWWK....",
+        "....KWWWWWWK....",
+        "....KWWWWWWK....",
+        ".....KWWWWKK....",
+        "......KKKKK.....",
+        ".....OO...OO....",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "......KKKK......",
+        ".....KKKKKK.....",
+        ".....KKKEKKK....",
+        ".....KKKKKOOO...",
+        ".....KWWWKK.....",
+        "....KWWWWWKKKK..",
+        "...KKWWWWWWKK...",
+        "....KWWWWWWK....",
+        "....KWWWWWWK....",
+        "....KWWWWWWK....",
+        ".....KWWWWKK....",
+        "......KKKKK.....",
+        ".....OO...OO....",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    {
+      "id": "imperador",
+      "nome": "Imperador",
+      "cores": {
+        "K": "#1f2530",
+        "W": "#f5f5f5",
+        "O": "#ff9800",
+        "E": "#ffffff"
+      }
+    },
+    {
+      "id": "azulzinho",
+      "nome": "Pinguim-azul",
+      "cores": {
+        "K": "#3f6fb5",
+        "W": "#e3f2fd",
+        "O": "#37474f"
+      }
+    },
+    {
+      "id": "rosa",
+      "nome": "Rosa-chiclete",
+      "cores": {
+        "K": "#ad1457",
+        "W": "#fce4ec",
+        "O": "#ffb300"
+      }
+    },
+    {
+      "id": "dourado",
+      "nome": "Dourado",
+      "cores": {
+        "K": "#8d6e00",
+        "W": "#fff8e1",
+        "O": "#e65100"
+      }
+    }
+  ],
+  "falas": [
+    "Quac!",
+    "Peixe fresco!",
+    "Que calor aqui fora...",
+    "Escorregando!",
+    "Alguém viu um iceberg?"
+  ]
+}

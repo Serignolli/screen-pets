@@ -1,0 +1,213 @@
+{
+  "id": "dragao",
+  "nome": "Dragão",
+  "tipo": "voador",
+  "descricao": "Um dragãozinho que voa pelo alto da tela e cospe fogo de vez em quando.",
+  "voo": 5,
+  "efeito": "fogo",
+  "carga": "gema",
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "...V............",
+        "..VWV...........",
+        "..VWWV......DD..",
+        "..VWWWV....BBBB.",
+        "...VWWWV..BBKBBB",
+        "....VWWD.BBBBBBN",
+        ".D...DBBBBBB....",
+        "DBD.DBBBBBBB....",
+        ".DBBBBLLLLLB....",
+        "..DDBBLLLLB.....",
+        ".....BB..BB.....",
+        ".....C...C......",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............DD..",
+        "...........BBBB.",
+        "VV........BBKBBB",
+        ".VWVV....BBBBBBN",
+        ".D.VWWVDBBBB....",
+        "DBD.VWWVBBBB....",
+        ".DBBBBLLLLLB....",
+        "..DDBBLLLLB.....",
+        ".....BB..BB.....",
+        ".....C...C......",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............DD..",
+        "...........BBBB.",
+        "..........BBKBBB",
+        ".........BBBBBBN",
+        ".D...DBBBBBB....",
+        "DBD.DBBBBBBB....",
+        ".DBBVWWWWVLB....",
+        "..DVWWWWVLB.....",
+        "..VWWWWVBBB.....",
+        "...VWWV..C......",
+        "....VV.........."
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............DD..",
+        "...........BBBB.",
+        "VV........BBKBBB",
+        ".VWVV....BBBBBBN",
+        ".D.VWWVDBBBB....",
+        "DBD.VWWVBBBB....",
+        ".DBBBBLLLLLB....",
+        "..DDBBLLLLB.....",
+        ".....BB..BB.....",
+        ".....C...C......",
+        "................"
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "................",
+        "...V............",
+        "..VWV...........",
+        "..VWWV......DD..",
+        "..VWWWV....BBBB.",
+        "...VWWWV..BBKBBB",
+        "....VWWD.BBBBRR.",
+        ".D...DBBBBBBBBN.",
+        "DBD.DBBBBBBB....",
+        ".DBBBBLLLLLB....",
+        "..DDBBLLLLB.....",
+        ".....BB..BB.....",
+        ".....C...C......",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............DD..",
+        "...........BBBB.",
+        "..........BBKBBB",
+        ".........BBBBRR.",
+        ".D...DBBBBBBBBN.",
+        "DBD.DBBBBBBB....",
+        ".DBBVWWWWVLB....",
+        "..DVWWWWVLB.....",
+        "..VWWWWVBBB.....",
+        "...VWWV..C......",
+        "....VV.........."
+      ]
+    ],
+    "parado": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "............DD..",
+        "...........BBBB.",
+        "VV........BBKBBB",
+        ".VWVV....BBBBBBN",
+        ".D.VWWVDBBBB....",
+        "DBD.VWWVBBBB....",
+        ".DBBBBLLLLLB....",
+        "..DDBBLLLLB.....",
+        ".....BB..BB.....",
+        ".....C...C......",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    {
+      "id": "verde",
+      "nome": "Verde da floresta",
+      "cores": {
+        "B": "#43a047",
+        "D": "#1b5e20",
+        "L": "#fff59d",
+        "W": "#81c784",
+        "V": "#2e7d32",
+        "K": "#1a1a1a",
+        "N": "#ffffff",
+        "R": "#d32f2f",
+        "C": "#eeeeee"
+      }
+    },
+    {
+      "id": "vermelho",
+      "nome": "Vermelho do vulcão",
+      "cores": {
+        "B": "#e53935",
+        "D": "#8e0000",
+        "L": "#ffcc80",
+        "W": "#ef9a9a",
+        "V": "#b71c1c"
+      }
+    },
+    {
+      "id": "roxo",
+      "nome": "Roxo da noite",
+      "cores": {
+        "B": "#7e57c2",
+        "D": "#311b92",
+        "L": "#d1c4e9",
+        "W": "#b39ddb",
+        "V": "#4527a0",
+        "K": "#ffeb3b"
+      }
+    },
+    {
+      "id": "dourado",
+      "nome": "Dourado do tesouro",
+      "cores": {
+        "B": "#fbc02d",
+        "D": "#f57f17",
+        "L": "#fff8e1",
+        "W": "#ffe082",
+        "V": "#ff8f00"
+      }
+    },
+    {
+      "id": "gelo",
+      "nome": "Azul do gelo",
+      "cores": {
+        "B": "#4fc3f7",
+        "D": "#01579b",
+        "L": "#e1f5fe",
+        "W": "#b3e5fc",
+        "V": "#0277bd",
+        "R": "#1565c0"
+      }
+    }
+  ],
+  "falas": [
+    "ROOOAR!",
+    "Quem mexeu no meu tesouro?",
+    "Cuidado com o fogo!",
+    "Voando baixo!",
+    "Uma gema para cada dia."
+  ]
+}

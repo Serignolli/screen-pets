@@ -1,0 +1,55 @@
+{
+  "id": "abelha",
+  "nome": "Abelhas",
+  "tipo": "voador",
+  "voo": 3,
+  "descricao": "Zumbem pelo alto da tela atrás de flores e soltam florzinhas pelo caminho.",
+  "efeito": "flores",
+  "ritmo": 1.1,
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "....WWW.WWW.....",
+        "....WWWWWWW.....",
+        ".....WW.WW..K...",
+        "...YYKYYKYYKKK..",
+        "..YYYKYYKYYKEK..",
+        ".KYYYKYYKYYKKK..",
+        "...YYKYYKYY.....",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ],
+      [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "...WWWW.WWWW....",
+        ".....WW.WW..K...",
+        "...YYKYYKYYKKK..",
+        "..YYYKYYKYYKEK..",
+        ".KYYYKYYKYYKKK..",
+        "...YYKYYKYY.....",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "mel", "nome": "Mel", "cores": { "Y": "#fdd835", "K": "#212121", "W": "#e3f2fd", "E": "#ffffff" } },
+    { "id": "laranja", "nome": "Laranja", "cores": { "Y": "#ffa726" } },
+    { "id": "rosa", "nome": "Rosa", "cores": { "Y": "#f8bbd0" } }
+  ],
+  "falas": ["Bzzz!", "Mel fresquinho!", "Trabalhando duro!", "Uma flor, duas flores...", "Bzz bzz!"]
+}

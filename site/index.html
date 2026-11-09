@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Pets — bichinhos em pixel art nas bordas da sua tela</title>
+<meta name="description" content="Bichinhos em pixel art que passeiam pelas bordas da tela do Windows, do macOS e do Linux: em cima da barra de tarefas, subindo pelas laterais e voando no alto. Grátis, 100% local, sem conta e sem internet.">
+<meta name="theme-color" content="#1e2a3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Screen Pets: bichinhos na sua tela">
+<meta property="og:description" content="Gatos na barra de tarefas, lagartixas nas laterais e pássaros no alto da tela. Para Windows, macOS e Linux, grátis.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1.3.4">
+  <!-- SEO -->
+  <link rel="canonical" href="https://screenpets.serignolli.com/" />
+  <meta property="og:url" content="https://screenpets.serignolli.com/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Screen Pets" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Screen Pets",
+      "description": "Bichinhos em pixel art que passeiam pelas bordas da tela do Windows, do macOS e do Linux.",
+      "applicationCategory": "DesktopEnhancementApplication",
+      "inLanguage": "pt-BR",
+      "author": {
+        "@type": "Person",
+        "name": "Gabriel Moreno Serignolli",
+        "url": "https://serignolli.com/"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Gabriel Moreno Serignolli",
+        "url": "https://serignolli.com/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "url": "https://screenpets.serignolli.com/",
+      "operatingSystem": "Windows, Linux, macOS"
+    }
+  </script>
+  <!-- Vercel Web Analytics -->
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="logo"><span class="logo-mark" aria-hidden="true"></span>screen<b>·</b>pets</a>
+    <div class="nav-links">
+      <a href="#simulador">Simulador</a>
+      <a href="#bichinhos">Bichinhos</a>
+      <a href="#programa">O programa</a>
+      <a href="#supporters">Supporters Pack</a>
+      <a href="#perguntas">Perguntas</a>
+      <a class="btn btn-small btn-primary" href="#download">Baixar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="pill"><span class="dot"></span><span>Windows, macOS e Linux · grátis · sem conta e sem internet</span></div>
+      <h1>Bichinhos em pixel art<br><span class="hl">nas bordas da sua tela.</span></h1>
+      <p class="lead">Gatos passeando em cima da barra de tarefas, uma lagartixa subindo pela lateral, pássaros voando no alto. Uma turminha para fazer companhia enquanto você usa o computador, sem atrapalhar nada.</p>
+      <div class="cta">
+        <a class="btn btn-primary btn-big dl-link" id="heroDl" href="ScreenPets-Setup.exe" download>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a.75.75 0 01.75.75v6.69l2.22-2.22a.75.75 0 111.06 1.06l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 111.06-1.06l2.22 2.22V1.75A.75.75 0 018 1zM2.75 13a.75.75 0 000 1.5h10.5a.75.75 0 000-1.5H2.75z"/></svg>
+          <span id="heroDlText">Baixar para Windows</span>
+        </a>
+        <a class="btn btn-ghost btn-big" href="#simulador">Montar a minha turma</a>
+      </div>
+      <p class="meta"><span>o mouse passa direto</span><span>nunca rouba o foco</span><span>some em tela cheia</span><span>100% local</span></p>
+    </div>
+    <div class="monitor monitor-hero" aria-hidden="true">
+      <div class="screen">
+        <div class="wall"></div>
+        <div class="win win-a"><i></i><i></i><i></i></div>
+        <div class="win win-b"><i></i><i></i><i></i></div>
+        <canvas id="heroStage" class="stage stage-full"></canvas>
+        <div class="taskbar"><span class="tb-start"></span><span class="tb-app"></span><span class="tb-app"></span><span class="tb-app on"></span><span class="tb-tray"><span class="tb-pets"></span><span class="tb-clock">14:32</span></span></div>
+      </div>
+      <div class="monitor-foot"></div>
+    </div>
+  </div>
+</header>
+
+<section class="kinds">
+  <div class="container">
+    <div class="kinds-grid">
+      <div class="kind"><span class="kind-ico" data-icon="gatos"></span><h3>Terrestres</h3><p>Gatos, cachorros, pinguins, formigas e coelhos passeando, cochilando e brincando.</p><span class="where">na barra de tarefas</span></div>
+      <div class="kind"><span class="kind-ico" data-icon="lagartixa"></span><h3>Escaladores</h3><p>Lagartixa, joaninha, caracol, aranha e besouro grudados na parede.</p><span class="where">nas laterais ou no alto</span></div>
+      <div class="kind"><span class="kind-ico" data-icon="passarinho"></span><h3>Voadores</h3><p>Pássaros, borboletas, abelhas, morcegos e até um dragãozinho.</p><span class="where">no alto ou nas laterais</span></div>
+    </div>
+    <p class="note center">Quem anda fica no chão. Quem escala e quem voa divide o resto: uma aranha pode passear pelo teto e uma borboleta pode voar perto da lateral.</p>
+  </div>
+</section>
+
+<section id="simulador" class="sim">
+  <div class="container">
+    <p class="eyebrow">Simulador</p>
+    <h2>Monte a sua turma antes de instalar.</h2>
+    <p class="sub">Esta é a mesma tela de configuração do programa, funcionando aqui no navegador com os mesmos desenhos. Tudo vale na hora: brinque à vontade e, quando gostar, é só instalar e montar igual.</p>
+
+    <div class="sim-grid">
+      <div class="monitor monitor-sim">
+        <div class="screen">
+          <div class="wall"></div>
+          <div class="win win-a"><i></i><i></i><i></i></div>
+          <div class="win win-b"><i></i><i></i><i></i></div>
+          <div class="win win-c"><i></i><i></i><i></i></div>
+          <canvas id="simStage" class="stage stage-full" aria-label="Tela de mentira com os bichinhos nas bordas" role="img"></canvas>
+          <div class="taskbar"><span class="tb-start"></span><span class="tb-app"></span><span class="tb-app on"></span><span class="tb-app"></span><span class="tb-app"></span><span class="tb-tray"><span class="tb-pets"></span><span class="tb-clock" id="simClock">14:32</span></span></div>
+        </div>
+        <div class="monitor-foot"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Na sua tela</h3>
+          <button type="button" class="btn btn-small btn-primary" id="addGroup">+ Adicionar bichinho</button>
+        </div>
+        <ul class="groups" id="groups"></ul>
+
+        <div class="detail" id="detail">
+          <div class="detail-top">
+            <canvas class="detail-ico" id="detailIco" width="56" height="56"></canvas>
+            <div>
+              <h4 id="detailName">Gatos</h4>
+              <p class="detail-kind" id="detailKind"></p>
+            </div>
+          </div>
+          <div class="row2">
+            <label>Cor <select id="fCor"></select></label>
+            <label>Quantos <input type="number" id="fQtd" min="1" max="10" value="2"></label>
+          </div>
+          <fieldset class="places" id="fLugar">
+            <legend>Onde ficam</legend>
+            <label><input type="radio" name="lugar" value="chao"> Na barra de tarefas</label>
+            <label><input type="radio" name="lugar" value="topo"> No alto da tela</label>
+            <label><input type="radio" name="lugar" value="laterais"> Nas duas laterais</label>
+            <label><input type="radio" name="lugar" value="esquerda"> Só na esquerda</label>
+            <label><input type="radio" name="lugar" value="direita"> Só na direita</label>
+            <p class="rule" id="fRule"></p>
+          </fieldset>
+          <label class="range">Tamanho <input type="range" id="fTam" min="1" max="5" step="1"> <span id="fTamName">Pequeno</span></label>
+          <div class="detail-actions">
+            <button type="button" class="btn btn-small" id="swapChar">Trocar bichinho</button>
+            <button type="button" class="btn btn-small" id="removeGroup">Tirar da tela</button>
+          </div>
+        </div>
+        <p class="empty" id="emptyMsg" hidden>Ninguém na tela. Adicione um bichinho!</p>
+
+        <div class="globals">
+          <label class="check"><input type="checkbox" id="gAtivo" checked> Mostrar os bichinhos</label>
+          <label class="check"><input type="checkbox" id="gBaloes" checked> Balõezinhos de fala</label>
+          <label class="range">Velocidade <input type="range" id="gVel" min="0" max="4" step="1"> <span id="gVelName">Normal</span></label>
+        </div>
+        <div class="panel-foot">
+          <button type="button" class="linkish" id="resetCfg">Voltar ao começo</button>
+        </div>
+      </div>
+    </div>
+    <p class="note">A tela daqui é menor que a sua, então os bichinhos parecem maiores. No computador, o tamanho "Pequeno" já dá para ver bem.</p>
+  </div>
+</section>
+
+<section id="bichinhos">
+  <div class="container">
+    <p class="eyebrow">A turma</p>
+    <h2>Conheça os bichinhos.</h2>
+    <p class="sub">Todos vêm de graça e cada um tem várias cores (clique nas bolinhas). Dá para misturar as cores numa turma só.</p>
+    <div class="tabs" role="tablist" id="kindTabs">
+      <button type="button" role="tab" data-kind="terrestre" aria-selected="true">Terrestres <small>no chão</small></button>
+      <button type="button" role="tab" data-kind="escalador" aria-selected="false">Escaladores <small>nas paredes</small></button>
+      <button type="button" role="tab" data-kind="voador" aria-selected="false">Voadores <small>no céu</small></button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="programa" class="prog">
+  <div class="container">
+    <p class="eyebrow">O programa</p>
+    <h2>Instala em um clique, configura em outro.</h2>
+    <p class="sub">Sem assistente comprido e sem nada técnico. Tudo vale na hora: não tem botão de salvar.</p>
+    <div class="shots">
+      <figure class="shot"><img src="img/setup.png" alt="Instalador do Screen Pets com os bichinhos andando no topo" width="906" height="660" loading="lazy"><figcaption><b>O instalador.</b> Um botão, não precisa de administrador.</figcaption></figure>
+      <figure class="shot"><img src="img/config.png" alt="Tela de configuração: lista das turmas à esquerda e a turma escolhida à direita" width="1081" height="800" loading="lazy"><figcaption><b>A configuração.</b> As turmas à esquerda, a escolhida à direita.</figcaption></figure>
+      <figure class="shot"><img src="img/escolher.png" alt="Janela para escolher um bichinho, separada em terrestres, escaladores e voadores" width="906" height="735" loading="lazy"><figcaption><b>A escolha.</b> Separada em terrestres, escaladores e voadores.</figcaption></figure>
+    </div>
+    <div class="features">
+      <div class="feat"><h3>Não atrapalha</h3><p>O mouse passa direto por eles. Não aparecem no Alt+Tab e nunca roubam o foco da janela em que você está.</p></div>
+      <div class="feat"><h3>Some em tela cheia</h3><p>Vídeo, jogo ou apresentação ocupando a tela inteira? Eles saem de cena sozinhos e voltam depois.</p></div>
+      <div class="feat"><h3>Esconder rapidinho</h3><p>Botão direito no ícone perto do relógio: <em>Esconder</em> (para uma reunião, por exemplo) ou <em>Sair</em>. No macOS e no Linux: <code>screenpets esconder</code>.</p></div>
+      <div class="feat"><h3>Liga com o computador</h3><p>Depois de instalado, volta sozinho sempre que o computador ligar, no Windows, no macOS e no Linux. Dá para desligar isso na configuração.</p></div>
+      <div class="feat"><h3>Balõezinhos</h3><p>De vez em quando um deles comenta alguma coisa. Quando dois se cruzam, às vezes param para se cumprimentar.</p></div>
+      <div class="feat"><h3>Cada um no seu canto</h3><p>Os terrestres andam na barra de tarefas, os escaladores grudam nas paredes e os voadores ficam no céu da tela.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="supporters" class="pack">
+  <div class="container">
+    <p class="eyebrow">Supporters Pack <span class="soon-tag">em breve</span></p>
+    <h2>A turma em alta definição.</h2>
+    <p class="sub">Para quem quiser apoiar o projeto: os mesmos bichinhos redesenhados em HD, com animações quadro a quadro e mais capricho em cada detalhe. O Screen Pets e todos os bichinhos de hoje continuam grátis.</p>
+    <div class="pack-grid">
+      <div class="pack-compare">
+        <figure class="pack-now">
+          <div class="pack-art"><canvas id="packNow" class="stage" aria-label="Gato em pixel art, como é hoje" role="img"></canvas></div>
+          <figcaption>Hoje</figcaption>
+        </figure>
+        <span class="pack-arrow" aria-hidden="true">→</span>
+        <figure class="pack-hd">
+          <div class="pack-art pack-hd-art"><img id="packHd" src="img/hd/gatos.png" alt="Gato em alta definição, como vai ser no pack" width="64" height="64"></div>
+          <figcaption>No pack</figcaption>
+        </figure>
+      </div>
+      <ul class="pack-list">
+        <li><b>Desenhos em alta definição</b> Mais pontos, mais cor e mais expressão em cada bichinho.</li>
+        <li><b>Animações caprichadas</b> Andar, cochilar, pular e brincar quadro a quadro, bem mais suave.</li>
+        <li><b>Nos mesmos lugares</b> Chão, paredes e céu, com as mesmas cores para misturar.</li>
+        <li><b>Windows, macOS e Linux</b> Entra na turma que você já tem, sem reinstalar nada.</li>
+      </ul>
+    </div>
+    <div class="pack-cta">
+      <a class="btn btn-primary btn-big" href="https://apoie.serignolli.com/suporte?pack=screenpets-hd" target="_blank" rel="noopener noreferrer">Quero apoiar</a>
+      <p class="pack-note">Ainda sem data. Quando sair, ele aparece aqui e na página de apoio.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="download">
+  <div class="container">
+    <div class="dl-box">
+      <div>
+        <p class="eyebrow">Download</p>
+        <h2>Leve a turma para casa.</h2>
+        <p class="sub">Baixe o instalador, clique em <em>Instalar</em> e os bichinhos aparecem na hora.</p>
+        <a class="btn btn-primary btn-big dl-link" id="dlWindows" href="ScreenPets-Setup.exe" download>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 2.2 6.5 1.3v6.2H0zm7.3-1 8.7-1.2v7.5H7.3zM0 8.3h6.5v6.3L0 13.7zm7.3 0H16V16l-8.7-1.2z"/></svg>
+          <span>Baixar para Windows</span>
+        </a>
+        <p class="note">Windows 10 ou 11 · cerca de 250 KB · não precisa de administrador nem de internet depois de baixar</p>
+        <p class="note warn">O Windows pode mostrar "o Windows protegeu o computador" porque o executável não é assinado. É só clicar em <em>Mais informações</em> → <em>Executar assim mesmo</em>.</p>
+        <div class="dl-unix" id="dlUnix">
+          <p class="dl-unix-title">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2 2.5A1.5 1.5 0 013.5 1h9A1.5 1.5 0 0114 2.5v8a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 10.5zm2.2 2.1a.6.6 0 00-.4 1.05L5.5 7 3.8 8.35a.6.6 0 10.75.94l2.3-1.83a.6.6 0 000-.94l-2.3-1.83a.6.6 0 00-.35-.1zM7.5 8.4a.6.6 0 000 1.2h3a.6.6 0 000-1.2zM1 13.75A.75.75 0 011.75 13h12.5a.75.75 0 010 1.5H1.75A.75.75 0 011 13.75z"/></svg>
+            No macOS e no Linux, cole no terminal:
+          </p>
+          <div class="dl-cmd">
+            <code id="unixCmd">curl -fsSL https://screenpets.serignolli.com/install.sh | sh</code>
+            <button type="button" class="btn btn-small" id="copyCmd">Copiar</button>
+          </div>
+          <p class="note">macOS 11 ou mais novo (Intel ou Apple) e Linux com X11 ou XWayland. Instala sem senha de administrador, liga junto com o computador e abre a escolha da turma no próprio terminal. Para mudar depois: <code>screenpets</code>.</p>
+        </div>
+      </div>
+      <ul class="dl-steps">
+        <li><b>1</b> Abra o <code>ScreenPets-Setup.exe</code></li>
+        <li><b>2</b> Clique em <em>Instalar</em></li>
+        <li><b>3</b> Escolha quem aparece e onde</li>
+        <li><b>4</b> Pronto: eles voltam sozinhos quando o computador ligar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="perguntas">
+  <div class="container narrow">
+    <p class="eyebrow">Perguntas</p>
+    <h2>Perguntas que os bichinhos já ouviram.</h2>
+    <details><summary>Eles atrapalham o que eu estou fazendo?</summary><p>Não. Os cliques passam direto por eles, as janelas deles não aparecem no Alt+Tab e nunca roubam o foco. Ficam só nas bordas da tela e somem sozinhos quando algo ocupa a tela inteira.</p></details>
+    <details><summary>Precisa de internet? Manda algum dado?</summary><p>Não. Tudo roda no seu computador: sem conta, sem telemetria, sem servidor.</p></details>
+    <details><summary>Posso pôr um gato no alto da tela?</summary><p>Não: quem anda fica em cima da barra de tarefas. Os escaladores e os voadores é que dividem o alto e as laterais, então dá para ter uma aranha passeando pelo teto ou uma borboleta voando perto da lateral.</p></details>
+    <details><summary>Onde ele é instalado?</summary><p>No Windows, em <code>%LOCALAPPDATA%\Programs\ScreenPets</code>, só para o seu usuário (por isso não pede administrador), com o atalho <em>Screen Pets</em> na área de trabalho e no menu Iniciar. No macOS, em <code>~/Library/Application Support/ScreenPets</code>; no Linux, em <code>~/.local/share/screenpets</code> (com <em>Screen Pets</em> no menu de aplicativos). Nos dois, o comando <code>screenpets</code> fica em <code>~/.local/bin</code>.</p></details>
+    <details><summary>Funciona no Mac e no Linux?</summary><p>Sim: é o mesmo programa, com os mesmos bichinhos e o mesmo jeito de andar, subir e voar. A diferença é que a configuração é feita no terminal (o comando <code>screenpets</code>), em vez de uma janela, e no lugar da barra de tarefas eles andam em cima do Dock ou do painel. No Linux, ele precisa de X11 ou XWayland (o normal no Ubuntu, Fedora, Mint e companhia) e de um compositor para a transparência.</p></details>
+    <details><summary>Como mudo a turma depois?</summary><p>No Windows, clique no ícone dos bichinhos perto do relógio ou abra <em>Screen Pets</em> pelo atalho: a tela de configuração é a mesma do simulador aqui de cima. No macOS e no Linux, digite <code>screenpets</code> no terminal. Tudo vale na hora.</p></details>
+    <details><summary>Consome muito do computador?</summary><p>Quase nada: são desenhos pequenos atualizados algumas dezenas de vezes por segundo. Escondidos (ou em tela cheia), eles param de vez.</p></details>
+    <details><summary>Funciona com dois monitores?</summary><p>Por enquanto os bichinhos ficam só no monitor principal.</p></details>
+    <details><summary>Como desinstalo?</summary><p>No Windows, por <em>Aplicativos instalados</em>, como qualquer programa, ou pelo link <em>Desinstalar</em> no cantinho da tela de configuração. No macOS e no Linux: <code>screenpets desinstalar</code>.</p></details>
+    <details><summary>O que é o Supporters Pack?</summary><p>Um pacote com os bichinhos redesenhados em alta definição, com animações melhores, para quem quiser apoiar o projeto. Ainda está sendo feito. O programa e todos os bichinhos de hoje continuam grátis.</p></details>
+    <details><summary>Tem alguma relação com o CmdCrew?</summary><p>É o irmão dele para quem não usa terminal: os bichinhos terrestres vieram do <a href="https://cmdcrew.serignolli.com/" target="_blank" rel="noopener">CmdCrew</a>, que trabalha junto com o Claude Code. O Screen Pets não precisa de agente nenhum, é só companhia.</p></details>
+  </div>
+</section>
+
+<div class="parade-wrap" aria-hidden="true"><canvas id="parade" class="stage stage-full"></canvas></div>
+
+<footer>
+  <div class="container">
+    <span>Feito com pixels e café · irmão do <a href="https://cmdcrew.serignolli.com/" target="_blank" rel="noopener">CmdCrew</a></span>
+    <span class="credit">
+      Desenvolvido por <a href="https://serignolli.com" target="_blank" rel="noopener noreferrer">Serignolli</a>
+      · <a href="https://apoie.serignolli.com/" target="_blank" rel="noopener noreferrer">Pague um café pra turma</a>
+    </span>
+  </div>
+</footer>
+
+<!-- Aparece só no primeiro download (ver main.js) -->
+<dialog class="support" id="support" aria-labelledby="supportTitle">
+  <div class="support-body">
+    <div class="support-pets" aria-hidden="true">
+      <img src="img/hd/gatos.png" alt="" width="64" height="64">
+      <img src="img/hd/coelhos.png" alt="" width="64" height="64">
+      <img src="img/hd/dragao.png" alt="" width="64" height="64">
+    </div>
+    <h2 id="supportTitle">A turma está a caminho!</h2>
+    <p>Valeu por levar os bichinhos para casa. O projeto é gratuito, aberto e sem anúncios. Se eles deixarem seu dia mais divertido, apoie o projeto: o Supporters Pack vai trazer a turma inteira em alta definição.</p>
+    <div class="support-actions">
+      <a class="btn btn-primary" href="#supporters" id="supportPack">Ver o Supporters Pack</a>
+    </div>
+    <button class="support-close" id="supportClose" type="button">Agora não</button>
+  </div>
+</dialog>
+
+<!-- Escolha de bichinho (adicionar ou trocar) -->
+<dialog class="picker-dlg" id="pickerDlg" aria-labelledby="pickerTitle">
+  <div class="picker-body">
+    <h3 id="pickerTitle">Escolha um bichinho</h3>
+    <div id="pickerList"></div>
+    <button type="button" class="linkish" id="pickerClose">Cancelar</button>
+  </div>
+</dialog>
+
+<script src="dados.js?v=1.3.4"></script>
+<script src="sprites.js?v=1.3.4"></script>
+<script src="main.js?v=1.3.4"></script>
+</body>
+</html>

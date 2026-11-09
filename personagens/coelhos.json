@@ -1,0 +1,132 @@
+{
+  "id": "coelhos",
+  "nome": "Coelhos",
+  "tipo": "terrestre",
+  "descricao": "Coelhos que saltitam pela barra de tarefas, mexem o nariz e param para roer uma cenoura.",
+  "efeito": "coracoes",
+  "carga": "cenoura",
+  "sprites": {
+    "andar": [
+      [
+        "................",
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBKBB..",
+        "........BBBBBBN.",
+        "..W...BBBBBBB...",
+        ".WWBBBBBBBBBB...",
+        "..BBBBBBBBBWW...",
+        "..BDBBBBBBBWW...",
+        "..BBBBBBBBBBB...",
+        "..BBBB....BBB..."
+      ],
+      [
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBKBB..",
+        "........BBBBBBN.",
+        ".W....BBBBBBB...",
+        "WWBBBBBBBBBB....",
+        ".BBBBBBBBBWW....",
+        ".BDBBBBBBBWW....",
+        "BBBBBBBBBBB.....",
+        "BB........BB....",
+        "...........BB..."
+      ]
+    ],
+    "parado": [
+      [
+        "................",
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBKBB..",
+        "........BBBBBBN.",
+        "..W...BBBBBBB...",
+        ".WWBBBBBBBBBB...",
+        "..BBBBBBBBBWW...",
+        "..BDBBBBBBBWW...",
+        "..BBBBBBBBBBB...",
+        "..BBBB....BBB..."
+      ],
+      [
+        "................",
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBDBB..",
+        "........BBBBBBBN",
+        "..W...BBBBBBB...",
+        ".WWBBBBBBBBBB...",
+        "..BBBBBBBBBWW...",
+        "..BDBBBBBBBWW...",
+        "..BBBBBBBBBBB...",
+        "..BBBB....BBB..."
+      ]
+    ],
+    "trabalhar": [
+      [
+        "................",
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBKBB..",
+        "........BBBBBBN.",
+        "..W...BBBBBBBOG.",
+        ".WWBBBBBBBBBOOG.",
+        "..BBBBBBBBBWO...",
+        "..BDBBBBBBBWW...",
+        "..BBBBBBBBBBB...",
+        "..BBBB....BBB..."
+      ],
+      [
+        "................",
+        "................",
+        "........BB.B....",
+        "........BPBB....",
+        "........BPBB....",
+        "........BPBB....",
+        ".........BBBB...",
+        "........BBBBBB..",
+        "........BBBKBB..",
+        "........BBBBBBBN",
+        "..W...BBBBBBBO..",
+        ".WWBBBBBBBBBOOG.",
+        "..BBBBBBBBBWO.G.",
+        "..BDBBBBBBBWW...",
+        "..BBBBBBBBBBB...",
+        "..BBBB....BBB..."
+      ]
+    ]
+  },
+  "skins": [
+    { "id": "cinza", "nome": "Cinza", "cores": { "B": "#a1a1a8", "D": "#7a7a82", "W": "#f5f5f5", "K": "#262626", "N": "#f48fb1", "P": "#f8bbd0", "O": "#ff9800", "G": "#43a047" } },
+    { "id": "branco", "nome": "Branco", "cores": { "B": "#f2f2f2", "D": "#cfcfcf", "W": "#ffffff", "K": "#c62828", "P": "#f8bbd0" } },
+    { "id": "caramelo", "nome": "Caramelo", "cores": { "B": "#c68642", "D": "#8d5524", "W": "#fff3e0" } },
+    { "id": "preto", "nome": "Preto", "cores": { "B": "#3d3d42", "D": "#26262a", "W": "#eeeeee", "K": "#fafafa", "P": "#c48b9f" } },
+    { "id": "chocolate", "nome": "Chocolate", "cores": { "B": "#6d4c41", "D": "#4e342e", "W": "#d7ccc8", "K": "#fafafa" } }
+  ],
+  "falas": ["Pulinho!", "Cenoura? Onde?", "Nham nham.", "Minhas orelhas ouviram tudo.", "Tô só de passagem.", "Hop, hop!"]
+}
