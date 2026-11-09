@@ -30,3 +30,8 @@
   - Prioridade (5 da próxima cota): aranha (8 patas), caracol (casco), morcego (normal, só um pouco fofo), gato, cachorro
   - Depois: os outros 10, conforme a cota
 - [x] Nomes sem diminutivo em todo lugar: "Morceguinhos" → "Morcegos", "Passarinhos" → "Pássaros" (personagens/*.json, site, README); exe e pacotes macOS/Linux recompilados
+- [x] "dragãozinho" → "dragão" (personagens/dragao.json, site); exe e pacotes recompilados
+- [x] README refeito no modelo do CmdCrew (instalar, configurar, personagens, Supporters Pack, privacidade, desenvolvimento, créditos)
+- [x] LICENSE (MIT, igual ao CmdCrew), citado no README
+- [x] site/img/*.png refeitas com `ScreenPets.exe telas` (as antigas ainda diziam "Screen Crew")
+- [ ] Repositório público: o README não tem link de GitHub (não existe repo do Screen Pets ainda)

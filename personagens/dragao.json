@@ -2,7 +2,7 @@
   "id": "dragao",
   "nome": "Dragão",
   "tipo": "voador",
-  "descricao": "Um dragãozinho que voa pelo alto da tela e cospe fogo de vez em quando.",
+  "descricao": "Um dragão que voa pelo alto da tela e cospe fogo de vez em quando.",
   "voo": 5,
   "efeito": "fogo",
   "carga": "gema",
